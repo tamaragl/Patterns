@@ -30,3 +30,21 @@ class contadorDecrementa implements ContadorInterface
 		//code
 	}
 }
+
+
+/**
+ *  Ejemplo de uso
+ *  --------------------------------------------------------------
+ *  Si cambiaramos nuestra lógica, es decir, ContadorIncremanta por 
+ *  ContadorDecrementa no pasaría nada al resto de nuestro código 
+ *  porque amblas clases cumplen el mismo contrato y tienen los mismos
+ *  métodos.
+ *
+ * 	Ej: clases de encriptación (md5, sha1); conectores bbdd (pdo, mysqli)
+ */
+
+$mi_contador = new ContadorIncrementa();
+$mi_contador->cuenta();
+
+$mi_contador = new ContadorDecrementa();
+$mi_contador->cuenta();
